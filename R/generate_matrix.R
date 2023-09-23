@@ -10,6 +10,7 @@
 #' @examples
 #' generate_cor_matrix(c("var1", "var2", "var3"))
 #' generate_cor_matrix(c("var1", "var2"), range = c(-0.5, 0.5))
+#' @export
 generate_matrix <- function(var_names, range = c(-0.01, 0.01)) {
   # Input checks
   if (length(range) != 2 || any(range < -1) || any(range > 1)) {
